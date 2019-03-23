@@ -1,12 +1,156 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/font/flaticon.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+    <title>Henrik Lööf - Frontendutvecklare</title>
+
 </head>
 <body>
-    <p>Hej!</p>
-    <p>Jag är Henrik</p>
+<div class="container">
+
+    <aside>
+        <header>
+            <h1>Henrik Lööf</h1>
+            <h2>Frontendutvecklare</h2>
+            <img class="profile_image" src="images/profile_img.jpg">
+        </header>
+        <div class="contact">
+            <ul>
+                <li><a href="mailto:loof.henrik@telia.com"><i class="flaticon-note contact_icons"></i></a></li>
+                <li><a href="tel:0705526292"><i class="flaticon-technology contact_icons"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/henrik-l%C3%B6%C3%B6f-5aa64ab2" target="_blank"><i class="flaticon-linkedin-letters contact_icons"></i></a></li>
+            </ul>
+        </div>
+        <div class="about">
+            <p>
+                Nyexaminerad Frontendutvecklare som sagt att han aldrig skulle bli programmerare. Efter två år av
+                frontendutveckling på Nackademin på inser han hur fel ute han var och jagar nu spännande uppdrag.
+                Har även två år Interaktionsdesign på Stockholms Universitet!
+            </p>
+            <p>
+                Positiv och analytisk. En mix introvert och extrovert. Prestigelös.
+
+            </p>
+        </div>
+        <div class="skills">
+            <span id="html5">html5</span>
+            <span id="css3">css3</span>
+            <span id="js">javascript</span>
+            <span id="responsive">responsiv</span>
+            <span id="jquery">jquery</span>
+            <span id="php">php</span>
+            <span id="wp">wordpress</span>
+            <span id="sass">sass</span>
+            <span id="gulp">gulp</span>
+            <span id="git">versionshantering</span>
+            <span id="ux">ux</span>
+        </div>
+    </aside>
+
+    <div class="portfolio_content">
+        <div class="section">
+            <img src="images/portfolio_tmbrollop.jpg" alt="Elmerhags bröllop">
+            <div class="img_color" id="tm">
+                <h3>Elmerhags Bröllop</h3>
+                <p>En sida till min systers bröllop med information till gästerna.
+                <p>Lösenord till sidan är 160820.</p>
+                <a href="http://thereseochmagnus.se/" target="_blank" class="mobile_link">Till sidan</a>
+            </div>
+            <a href="#tm" class="toggle_text">
+                <span class="toggle_show">+</span>
+                <span class="toggle_hide">-</span>
+            </a>
+        </div>
+        <div class="section">
+            <img src="images/portfolio_laios.jpg" alt="Laios">
+            <div class="img_color" id="laios">
+                <h3>LAIOS</h3>
+                <p>Ny hemsida till Laios, ett företag som sysslar med analys och webbproduktion.</p>
+                <a href="http://laios.se/" target="_blank" class="mobile_link">Till sidan</a>
+            </div>
+            <a href="#laios" class="toggle_text">
+                <span class="toggle_show">+</span>
+                <span class="toggle_hide">-</span>
+            </a>
+        </div>
+        <div class="section">
+            <img src="images/portfolio_themilkman.jpg" alt="The Milkman">
+            <div class="img_color" id="milkman">
+                <h3>The Milkman</h3>
+                <p>Landningsida i samband med Laios.</p>
+                <a href="http://www.themilkman.se/" target="_blank" class="mobile_link">Till sidan</a>
+            </div>
+            <a href="#milkman" class="toggle_text">
+                <span class="toggle_show">+</span>
+                <span class="toggle_hide">-</span>
+            </a>
+        </div>
+        <div class="section">
+            <img src="images/portfolio_mastermind.jpg" alt="Mastermind">
+            <div class="img_color" id="mastermind">
+                <h3>Mastermind</h3>
+                <p>Ett brädspel jag ville prova på att skapa och samtidigt lära mig React.
+                    Med facit i hand inte perfekt för ändamålet, men gjorde jobbet.</p>
+                <a href="http://loofhenrik.github.io/mastermind/" target="_blank" class="mobile_link">Till sidan</a>
+            </div>
+            <a href="#mastermind" class="toggle_text">
+                <span class="toggle_show">+</span>
+                <span class="toggle_hide">-</span>
+            </a>
+        </div>
+        <div class="section">
+            <img src="images/portfolio_chatup.jpg" alt="Chatup">
+            <div class="img_color" id="chatup">
+                <h3>Chatup</h3>
+                <p>Ett mindre projekt med syftet att bekanta mig med Angular, som här används med Firebase.
+                    Chatten är så enkel som den kan bli, du skriver in användarnamn och kan sen chatta.
+                    Innehållet kan enkelt raderas.</p>
+                <a href="http://loofhenrik.github.io/chatup/" target="_blank" class="mobile_link">Till sidan</a>
+            </div>
+            <a href="#chatup" class="toggle_text">
+                <span class="toggle_show">+</span>
+                <span class="toggle_hide">-</span>
+            </a>
+        </div>
+        <div class="section">
+            <img src="images/portfolio_augustyniak.jpg" alt="Augustyniaks bröllop">
+            <div class="img_color" id="augustyniak">
+                <h3>Augustyniaks bröllop</h3>
+                <p>En enkel informativ sida inför en väns bröllop.</p>
+                <a href="http://www.augustyniak.se/" target="_blank" class="mobile_link">Till sidan</a>
+            </div>
+            <a href="#augustyniak" class="toggle_text">
+                <span class="toggle_show">+</span>
+                <span class="toggle_hide">-</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="pulse_arrow"></div>
+
+    <div class="credit_icon">
+        <p>!</p>
+    </div>
+
+    <div class="credit_content">
+        <p>Fonter genererade av <a href="http://www.flaticon.com">flaticon.com</a>.</p>
+        <p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>:
+            <a data-file="back" href="http://www.flaticon.com/authors/graphicsbay">GraphicsBay</a>,
+            <a data-file="linkedin-logo" href="http://www.flaticon.com/authors/simpleicon">SimpleIcon</a>,
+            <a data-file="smartphone-2" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a>,
+            <a data-file="smartphone-5" href="http://www.flaticon.com/authors/freepik">Freepik</a>,
+            <a data-file="linkedin" href="http://www.flaticon.com/authors/darius-dan">Darius Dan</a>,
+            <a data-file="smartphone-3" href="http://www.flaticon.com/authors/freepik">Freepik</a></p>
+    </div>
+
+</div>
+
+<script src="dist/all.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,492 @@
+@media only screen  and (min-width : 321px) and (max-width: 415px) {
+
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #222;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    color: white;
+    background: #222;
+    background: radial-gradient(#333333, #111111);
+
+    font-family: 'Pavanam', sans-serif, "Gill Sans";
+
+  }
+
+  //------------------------------------- LEFT LAYOUT ---------------------------------
+  aside {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  header {
+    position: fixed;
+    z-index: 50;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+
+    background: #222;
+    border-bottom: 60px solid $red;
+
+    h1, h2 {
+      position: relative;
+      top: 5px;
+      right: 14%;
+      text-align: right;
+    }
+
+    h1 {
+      font-size: 24px;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    h2 {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: $blue;
+      margin: 0;
+    }
+  }
+
+  img.profile_image {
+    padding: 0;
+    margin: 0;
+    height: 90px;
+    width: 90px;
+
+    position: relative;
+    bottom: 39px;
+    left: 12%;
+    z-index: 51;
+
+    //border: 5px solid $red;
+    border-top: 7px solid $red_2;
+    border-right: 7px solid $red_3;
+    border-left: 7px solid $red;
+    border-bottom: 7px solid $red;
+    border-radius: 50%;
+  }
+
+  .header_shadow {
+    box-shadow: 0 1px 2px #222;
+  }
+
+  //---------------------------------- CONTACT ICONS -----------------------------
+
+  .contact {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    z-index: 51;
+
+    background: none;
+  }
+
+  .contact ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .contact ul li a i:before {
+    font-size: 20px;
+    margin: 0;
+    padding: 12px;
+    border-radius: 50%;
+    color: white;
+    background: black;
+
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+
+  .contact ul li a:active i:before {
+    background: white;
+    color: black;
+
+  }
+
+  .contact_icons {
+    position: absolute;
+  }
+
+  .flaticon-note {
+    top: 18px;
+    right: 39%;
+  }
+
+  .flaticon-technology {
+    top: 18px;
+    right: 24.5%;
+  }
+
+  .flaticon-linkedin-letters {
+    top: 18px;
+    right: 12%;
+  }
+
+  //--------------------------------------- ABOUT ----------------------------------
+
+  .about {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 10%;
+    padding-top: calc(5% + 120px);
+    width: 80%;
+    height: 20%;
+
+    background: $red;
+    background: linear-gradient(225deg, transparent 160px, $red 0), linear-gradient(225deg, transparent 110px, $red_2 0), linear-gradient(225deg, transparent 0px, $red_3 0);
+    box-shadow: 1px 1px 5px black;
+
+    p {
+      font-size: 16px;
+      text-shadow: 0 1px 1px $red_dark;
+    }
+  }
+
+  //--------------------------------------- SKILL CLOUD ------------------------------
+
+  .skills > span {
+    position: absolute;
+    text-transform: uppercase;
+  }
+
+  .skills {
+    position: relative;
+    top: 0px;
+    height: 200px;
+
+    span#html5 {
+      top: 36%;
+      left: 42%;
+      font-size: 28px;
+      color: white;
+    }
+
+    span#css3 {
+      top: 50%;
+      left: 24%;
+      font-size: 28px;
+      color: $red;
+    }
+
+    span#js {
+      top: 55%;
+      right: 20%;
+      font-size: 28px;
+      color: $blue;
+    }
+
+    span#jquery {
+      top: 25%;
+      right: 22%;
+      font-size: 14px;
+      color: white;
+    }
+
+    span#ux {
+      top: 38%;
+      right: 24%;
+      font-size: 18px;
+      color: $red;
+    }
+
+    span#responsive {
+      top: 36%;
+      left: 13%;
+      font-size: 18px;
+      color: $red;
+    }
+
+    span#sass {
+      top: 73%;
+      right: 34%;
+      font-size: 18px;
+      color: $red;
+    }
+
+    span#gulp {
+      top: 54%;
+      right: 9%;
+      font-size: 14px;
+      color: white;
+    }
+
+    span#php {
+      top: 58%;
+      left: 13%;
+      font-size: 14px;
+      color: $blue;
+
+    }
+
+    span#wp {
+      top: 76%;
+      left: 25%;
+      font-size: 14px;
+      color: white;
+    }
+
+    span#git {
+      top: 22%;
+      left: 22%;
+      font-size: 14px;
+      color: $blue;
+    }
+
+  }
+
+  //---------------------- ZIGZAG BORDER -------------------
+  .skills:after {
+    background: linear-gradient(-45deg, transparent 35px, $red 0), linear-gradient(45deg, transparent 35px, $red 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 35px 35px;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 100%;
+    height: 35px;
+  }
+
+  //-------------------------------------------------- PORTFOLIO CONTENT --------------------------------
+
+  .portfolio_content {
+    position: relative;
+    top:0px;
+    margin: 0 0 0 0;
+    padding: 1%;
+    width: 98%;
+
+    .section {
+      position: relative;
+      z-index: 10;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-decoration: none;
+      //border-bottom: 3px solid $red;
+
+    }
+
+    img {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .img_color {
+      position: relative;
+      top: 0;
+      left: 0;
+
+      margin: 0;
+      padding: 5% 10% 15% 10%;
+      width: 80%;
+
+      background: #444;
+      background: linear-gradient(-45deg, transparent 140px, #222 0), linear-gradient(-45deg, transparent 70px, #333 0), linear-gradient(-45deg, transparent 0px, #444 0);
+
+
+      display: none;
+
+      h3 {
+        color: white;
+        text-shadow: 0 1px 1px $red_dark;
+      }
+      p {
+        color: white;
+        text-shadow: 0 1px 1px $red_dark;
+        margin-bottom: 30px;
+      }
+    }
+
+    a.mobile_link {
+      display: block;
+      margin: 10px auto;
+      padding: 15px 15px;
+
+      text-align: center;
+      color: white;
+      background: tomato;
+      //border: 1px solid white;
+      text-decoration: none;
+    }
+
+    a.mobile_link:active {
+      background: white;
+      color: $red;
+      text-shadow: none;
+    }
+
+    .toggle_text {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%);
+
+      z-index: 200;
+      width: 80px;
+      height: 40px;
+      margin: 0;
+      padding: 0;
+
+      color: white;
+      //text-shadow: 0 0.5px 1px $red_dark;
+      background: #111;
+      font-size: 34px;
+
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      box-shadow: 0 -0.5px 1px #333;
+    }
+
+    .toggle_text:active {
+      background: white;
+      color: #111;
+    }
+
+    .toggle_text span {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    span.toggle_hide {
+      display: none;
+    }
+  }
+
+  //-------------------------------------- CREDIT-ICON -----------------------------------
+  /*
+  .pulse_arrow {
+    display: none;
+
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: calc(50% - 213px);
+
+    width: 25px;
+    height: 25px;
+
+    background: none;
+    border-right: 4px solid $red_dark;
+    border-bottom: 4px solid $red;
+    box-shadow: 2px 2px 2px #444;
+
+    transform: rotate(45deg);
+  }
+
+  .pulse_arrow {*/
+  //-webkit-animation: pulse_arrow 3s infinite; /* Safari 4+ */
+  //-moz-animation: pulse_arrow 3s infinite; /* Fx 5+ */
+  //-o-animation: pulse_arrow 3s infinite; /* Opera 12+ */
+  //animation: pulse_arrow 3s infinite; /* IE 10+, Fx 29+ */
+  /*}
+
+  @-webkit-keyframes pulse_arrow {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(45deg) scale(1);
+    }
+  }
+  @-moz-keyframes pulse_arrow {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(45deg) scale(1);
+    }
+  }
+  @-o-keyframes pulse_arrow {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(45deg) scale(1);
+    }
+  }
+  @keyframes pulse_arrow {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(45deg) scale(1);
+    }
+  }*/
+
+  //-------------------------------------- CREDIT-ICON -----------------------------------
+
+  .credit_icon {
+    display: none;
+  }
+
+  .credit_content {
+    position: relative;
+    z-index: 99;
+    bottom: 0px;
+    right: 0px;
+
+    margin: 0;
+    padding: 5%;
+    width: 90%;
+    background: linear-gradient(-45deg, transparent 100px, #222 0), linear-gradient(-45deg, transparent 50px, #333 0), linear-gradient(-45deg, transparent 0px, #444 0);
+
+
+    //display: none;
+
+    p {
+      color: white;
+      font-size: 14px;
+      margin: 0;
+    }
+    a {
+      color: $blue;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+  }
+  .credit_content a:active {
+    color: $blue_dark;
+    text-decoration: underline;
+  }
+}
